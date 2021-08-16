@@ -84,15 +84,15 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     //将本地js打包
-    new CopyWebpackPlugin({
-      patterns:[
-        {
-          from: '*.js',
-          context: path.resolve(rootDir, "public/js"),
-          to: path.resolve(rootDir, 'dist/js'),
-        }
-      ]
-    }),
+    // new CopyWebpackPlugin({
+    //   patterns:[
+    //     {
+    //       from: '*.js',
+    //       context: path.resolve(rootDir, "public/js"),
+    //       to: path.resolve(rootDir, 'dist/js'),
+    //     }
+    //   ]
+    // }),
     //抽离css
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',

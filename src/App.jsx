@@ -6,10 +6,10 @@
  * @Description: In User Settings Edit
  * @FilePath: /react-cli/src/index.js
  */
-import React from 'react'
-import './index.less'
-const App = () =>{
-  return <div id="root">wo33212223121111213shishui</div>
-}
+import React from 'react';
+import './index.less';
 
+const App = () => {
+  return <div id="App">飞飞的脚手架</div>;
+};
 export default App;

@@ -1,6 +1,6 @@
 {
   "name": "yushuangxu-cli",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -12,7 +12,15 @@
     "build:pro": "npx webpack --config build/webpack.pro.js",
     "eslint": "eslint config --fix"
   },
-  "author": "",
+  "keywords": [
+    "yushuangxu-cli",
+    "yu",
+    "脚手架"
+  ],
+  "author": {
+    "name": "yushuangxu",
+    "email": "2953514980@qq.com"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
@@ -52,7 +60,7 @@
     "style-loader": "^3.2.1",
     "ts-loader": "^9.2.5",
     "typescript": "^4.3.5",
-    "webpack": "^5.49.0",
+    "webpack": "^5.50.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0"
