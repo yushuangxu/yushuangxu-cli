@@ -10,7 +10,7 @@ axios.interceptors.response.use(res => {
  * @returns Promise
  */
  async function getRepoList() {
-    return axios.get('https://api.github.com/yushuangxu/yushuangxu-cli/repos')
+    return axios.get('https://api.github.com/users/yushuangxu/repos')
   }
   
   /**

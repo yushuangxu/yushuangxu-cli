@@ -1,10 +1,11 @@
 // lib/Generator.js
 const  {getRepoList,getTagList}  = require('./http')
 const ora = require('ora')
+const path = require('path')
 const util = require('util')
 const inquirer = require('inquirer')
 const downloadGitRepo = require('download-git-repo') // 不支持 Promise
-
+const chalk = require('chalk')
 //添加加载动画
 async function wrapLoading(fn,message,...args){
     //使用ora初始化.传入提示星系 message
@@ -59,7 +60,7 @@ class Generator {
   async download(repo, tag){
 
     // 1）拼接下载地址
-    const requestUrl = `yushuangxu-cli/${repo}${tag?'#'+tag:''}`;
+    const requestUrl = `yushuangxu/${repo}${tag?'#'+tag:''}`;
 
     // 2）调用下载方法
     await wrapLoading(
@@ -106,6 +107,7 @@ class Generator {
          // 4）模板使用提示
         console.log(`\r\nSuccessfully created project ${chalk.cyan(this.name)}`)
         console.log(`\r\n  cd ${chalk.cyan(this.name)}`)
+        console.log('  npm install \r\n')
         console.log('  npm run dev\r\n')
         console.log('用户选择了，repo=' + repo + '，tag='+ tag)
     
