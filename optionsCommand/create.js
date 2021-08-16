@@ -1,10 +1,10 @@
 // lib/create.js
 
 const path = require('path')
-
+const Generator = require('./Generator')
 // fs-extra 是对 fs 模块的扩展，支持 promise 语法
 const fs = require('fs-extra')
-const inquirer = require('inquirer')
+const inquirer = require('inquirer');
 
 module.exports = async function (name, options) {
   // 执行创建命令
@@ -48,4 +48,9 @@ module.exports = async function (name, options) {
       }
     }
   }
+
+  //创建项目
+  const generator = new Generator(name ,targetAir)
+  //开始创建项目
+  generator.create()
 }

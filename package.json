@@ -63,14 +63,18 @@
     "@babel/runtime-corejs3": "^7.14.9",
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
+    "axios": "^0.21.1",
     "bable-loader": "0.0.1-security",
     "chalk": "^4.1.2",
     "commander": "^8.1.0",
+    "download-git-repo": "^3.0.2",
     "figlet": "^1.5.2",
     "fs-extra": "^10.0.0",
     "inquirer": "^8.1.2",
     "lib-flexible": "^0.3.2",
+    "ora": "^5.4.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "util": "^0.12.4"
   }
 }
