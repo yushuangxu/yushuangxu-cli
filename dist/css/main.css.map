@@ -1,0 +1,1 @@
+{"version":3,"file":"css/main.css","mappings":"AAAA,MACE,UACA,sBACA,cACA,mBACF","sources":["webpack://react-cli/./src/index.less"],"sourcesContent":[".test {\n  color: red;\n  -webkit-transition: 4s;\n  transition: 4s;\n  width: 1.33333333rem;\n}"],"names":[],"sourceRoot":""}
