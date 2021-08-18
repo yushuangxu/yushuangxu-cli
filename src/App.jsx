@@ -10,6 +10,7 @@ import React from 'react';
 import './index.less';
 
 const App = () => {
-  return <div id="App">飞飞的脚手架</div>;
+  return <div id="App">hello-yushuangxu-cli</div>;
 };
+
 export default App;
